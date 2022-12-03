@@ -1,17 +1,17 @@
 pipeline {
   stages {
     stage("Build"){
-      script{
+      steps{
         echo "Build Stage.."
       }   
     }
     stage("Publish"){
-      script{
+      steps{
         echo "Publish Stage.."
       }   
     }
     stage("Deploy"){
-      script{
+      steps{
         echo "Deploy Stage.."
       }   
     }
