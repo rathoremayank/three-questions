@@ -30,12 +30,3 @@ while ctr < len(keys_list):
     print(keys_list[ctr])
     ctr = ctr + 1
 
-
-def get_key_value(obj_string, key_string):
-    print("OBJECT_STRING", obj_string)
-    print("KEY_LIST", key_string)
-    return obj_string
-
-
-print(get_key_value(obj_string,key_string))
-
