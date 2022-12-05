@@ -1,4 +1,4 @@
-#ToDo Web App -Angular, NodeJS and MySQL
+# ToDo Web App -Angular, NodeJS and MySQL
 
 ## Angular - Frontend
 Commands to run
