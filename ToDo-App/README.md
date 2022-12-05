@@ -11,7 +11,7 @@
     * npm start
 
 ## MySQL - Database
-Execute all the scripts
+* Execute all the scripts
 
-## Using Docker
-docker-compose up --build -d
+## Using Docker Compose
+* docker-compose up --build -d
