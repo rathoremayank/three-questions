@@ -6,36 +6,24 @@ import json
 obj_string = '{"a":{"b":{"c":{"d":"e"}}}}'
 key_string = 'a/b/c'
 
-key_string = key_string.replace("/", "")
-keys_list = list()
-keys_list.extend(key_string)
-
-print("Key list is: ", keys_list)
-print(type(keys_list))
-
-# converting object string to dictionary 
-json_obj = json.loads(obj_string)
-
-# checking data type of new json_obj 
-print(type(json_obj))
-
-
-#logic for popping items
-
-ctr = 0 
-
-while ctr < len(keys_list):
-    json_obj = json_obj[keys_list[ctr]]
-    print(json_obj)
-    print(keys_list[ctr])
-    ctr = ctr + 1
-
-
 def get_key_value(obj_string, key_string):
-    print("OBJECT_STRING", obj_string)
-    print("KEY_LIST", key_string)
-    return obj_string
+    key_string = key_string.replace("/", "")
+    keys_list = list()
+    keys_list.extend(key_string)
+
+    # converting object string to dictionary and checking type of it
+    json_obj = json.loads(obj_string)
+    print(type(json_obj))
+    
+    #logic for popping items
+    ctr = 0 
+    while ctr < len(keys_list):
+        json_obj = json_obj[keys_list[ctr]]
+        print(json_obj)
+        ctr = ctr + 1
+
+    return json_obj
 
 
+# function called here
 print(get_key_value(obj_string,key_string))
-
