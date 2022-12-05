@@ -1,3 +1,4 @@
+AWSTemplateFormatVersion: 2010-09-09
 # Create an RDS MySql 5.7 Instance
 Parameters:
   Owner:
