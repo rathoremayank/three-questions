@@ -1,10 +1,17 @@
 import json 
 
-# obj_string = input("Enter object String: ")
-# key_string = input("Enter key String: ")
+obj_string = input("Enter object String: ")
+key_string = input("Enter key String: ")
 
-obj_string = '{"a":{"b":{"c":{"d":"e"}}}}'
-key_string = 'a/b/c'
+# obj_string = '{"a":{"b":{"c":{"d":"e"}}}}'
+# key_string = 'a/b/c'
+
+def validateJSON(obj_string):
+    try:
+        json.loads(obj_string)
+    except ValueError as err:
+        return False
+    return True
 
 def get_key_value(obj_string, key_string):
     key_string = key_string.replace("/", "")
@@ -25,5 +32,6 @@ def get_key_value(obj_string, key_string):
     return json_obj
 
 
-# function called here
-print(get_key_value(obj_string,key_string))
+# functions called here
+if validateJSON(obj_string):
+    print(get_key_value(obj_string,key_string))
