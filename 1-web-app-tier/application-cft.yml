@@ -46,7 +46,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref 'cloudVPC'
-      AvailabilityZone: ap-northeast-1b
+      AvailabilityZone: ap-northeast-1c
       CidrBlock: 10.0.16.0/20
       MapPublicIpOnLaunch: true
 
@@ -150,7 +150,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref 'cloudVPC'
-      AvailabilityZone: us-east-1a
+      AvailabilityZone: ap-northeast-1a
       CidrBlock: 10.0.32.0/20
       MapPublicIpOnLaunch: false
 
@@ -159,7 +159,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref 'cloudVPC'
-      AvailabilityZone: us-east-1b
+      AvailabilityZone: ap-northeast-1c
       CidrBlock: 10.0.48.0/20
       MapPublicIpOnLaunch: false
 
@@ -168,7 +168,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref 'cloudVPC'
-      AvailabilityZone: us-east-1a
+      AvailabilityZone: ap-northeast-1a
       CidrBlock: 10.0.64.0/20
       MapPublicIpOnLaunch: false
 
@@ -177,7 +177,7 @@ Resources:
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref 'cloudVPC'
-      AvailabilityZone: us-east-1b
+      AvailabilityZone: ap-northeast-1c
       CidrBlock: 10.0.80.0/20
       MapPublicIpOnLaunch: false
 
